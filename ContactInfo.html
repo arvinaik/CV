@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Contact Info</title>
+</head>
+<!--the submit button submits the input data to a form handler which takes action based on input -->
+<!-- Name is like the variable that refers to the data that was input so name = whatever is filled in the form
+If i want to extract the data that was filled into the form, i would call the name-->
+
+<body>
+  <h1><strong><a href="index.html">Home</a></strong></h1>
+  <h2><strong>Please dont contact me</strong></h1>
+  <h3>Im afraid of confrontation</h3>
+  <!-- action what is done with data eg. sent to another url, method = how data in form is processed (get is less secure than post) -->
+  <form id='Contact Info' action="mailto:fnamefive@gmail.com" method="post" enctype = 'text/plain'>
+    <label>Your Name:</label>
+    <input id = 'uname' type="text" name="Name of User" value="" placeholder="Full Name"><br>
+    <label>How can we contact you?</label><br>
+    <label for="email">Email</label>
+    <!--Value for “checkbox”, “radio” and “image” it specifies the value associated with the input.
+-->
+    <input id='email' type="checkbox" name="Email Used" value="Yes">
+    <input type="email" name="yourEmail" value="" placeholder="Contact Email"> <br>
+    <label for="newsletter">Newsletter</label>
+    <input id='newsletter' type="checkbox" name="Newletter Used" value="Yes"><br>
+    <label for="pass">Ticket Number:</label>
+    <!--Value for password Text and Hidden is the default value for the input-->
+    <input id = 'pass' type="password" name="Ticket number" value="" ><br>
+    <label for="">Your enquiry:</label><br>
+    <textarea name="name" rows="8" cols="30"></textarea><br>
+    <button form="Contact Info" type="submit" name="contact info button">Submit!</button>
+  </form>
+
+
+
+</body>
+
+</html>
